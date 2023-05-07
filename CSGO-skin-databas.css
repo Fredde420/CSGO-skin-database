@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Quantico&display=swap");
+
+body {
+  background-color: #01162a;
+  color: #ccba7c;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+}
+
+.search-bar {
+  background-color: #254073;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 105vh;
+}
+
+#search-input {
+  width: 90vh;
+  height: 40px;
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.search-button {
+  background-color: #de9b35;
+  color: #0c0f12;
+  border: none;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+}
+
+#list-holder {
+  position: absolute;
+  top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  max-height: 48vh;
+}
+
+#dropdown {
+  position: relative;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1.6vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10vh;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10vh;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

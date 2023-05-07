@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSGO-skin-databas.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="" id="title">Skin search</h1>
+      <div class="container">
+        <div class="search-bar">
+          <div>
+            <input
+              type="text"
+              id="search-input"
+              onkeyup="search_skin()"
+              placeholder="Search..."
+            />
+            <br />
+            <div id="dropdown">
+              <ul id="list-holder"></ul>
+            </div>
+          </div>
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+    </main>
+    <script src="skins.js"></script>
+    <script src="CSGO-skin-databas.js"></script>
+  </body>
+</html>
