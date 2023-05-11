@@ -27,13 +27,25 @@ function search_skin() {
     obj.collection.toLowerCase().includes(input) || 
     obj.weapon.toLowerCase().includes(input) || 
     obj.name.toLowerCase().includes(input) || 
-    obj.grade.toLowerCase().includes(input)
+    obj.grade.toLowerCase().includes(input) 
   );
 
   // Create dropdown items for filtered skins
   filteredSkins.forEach(obj => {
     const elem = document.createElement("li");
-    elem.innerHTML = `${obj.collection} - ${obj.weapon} ${obj.name}`;
+    const skinContainer = document.createElement("div");
+    skinContainer.style.display = "flex"; // Set display property to flex
+    const skinInfo = document.createElement("div");
+    skinInfo.innerHTML = `${obj.collection} - ${obj.weapon} ${obj.name}`;
+    skinContainer.appendChild(skinInfo);
+    const moreInfoButton = document.createElement("button");
+    moreInfoButton.innerHTML = "More Information";
+    moreInfoButton.classList.add("more-info-button"); // Add CSS class
+    moreInfoButton.addEventListener('click', () => {
+      window.open(obj.link, "_blank");
+    });
+    skinContainer.appendChild(moreInfoButton); // Add button to container
+    elem.appendChild(skinContainer); // Add container to list item
     elem.addEventListener('click', () => {
       // Update search input value when a dropdown item is clicked
       document.getElementById('search-input').value = `${obj.collection} - ${obj.weapon} ${obj.name}`;
@@ -41,13 +53,6 @@ function search_skin() {
     });
     listHolder.appendChild(elem);
   });
-  
-  // Show dropdown only if there are filtered skins
-  if (filteredSkins.length > 0) {
-    listHolder.style.display = "block";
-  } else {
-    listHolder.style.display = "none";
-  }
 }
 
 // Close dropdown when user clicks outside of it
@@ -57,3 +62,11 @@ document.addEventListener('click', function(event) {
     document.getElementById('list-holder').innerHTML = "";
   }
 });
+
+
+
+
+
+
+
+// Update dropdown menu when user clicks on dropdown button
