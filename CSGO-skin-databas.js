@@ -81,12 +81,19 @@ function search_skin() {
     const elem = document.createElement("li");
     const skinContainer = document.createElement("div");
     skinContainer.style.display = "flex"; // Set display property to flex
-    const skinImg = document.createElement("img"); // Add an image element
-    skinImg.src = obj.picture; // Set its source to the picture property of the skin object
-    skinContainer.appendChild(skinImg); // Add image to container
+
+    // Add skin image
+    const skinImage = document.createElement("img");
+    skinImage.src = obj.picture;
+    skinImage.classList.add("skin-image");
+    skinContainer.appendChild(skinImage);
+
+    // Add skin information
     const skinInfo = document.createElement("div");
     skinInfo.innerHTML = `${obj.collection} - ${obj.weapon} ${obj.name}`;
     skinContainer.appendChild(skinInfo);
+
+    // Add more information button
     const moreInfoButton = document.createElement("button");
     moreInfoButton.innerHTML = "More Information";
     moreInfoButton.classList.add("more-info-button"); // Add CSS class
@@ -94,7 +101,9 @@ function search_skin() {
       window.open(obj.link, "_blank");
     });
     skinContainer.appendChild(moreInfoButton); // Add button to container
-    elem.appendChild(skinContainer); // Add container to list item
+
+    // Add skin container to list item
+    elem.appendChild(skinContainer);
     elem.addEventListener('click', () => {
       // Update search input value when a dropdown item is clicked
       document.getElementById('search-input').value = `${obj.collection} - ${obj.weapon} ${obj.name}`;
@@ -111,6 +120,7 @@ document.addEventListener('click', function(event) {
     document.getElementById('list-holder').innerHTML = "";
   }
 });
+
 
 
 

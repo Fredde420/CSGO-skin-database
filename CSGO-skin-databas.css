@@ -111,9 +111,16 @@ button.more-info-button {
   font-size: 12px; /* Set font size */
   margin-left: 10px; /* Add some margin to the left */
   border-radius: 5px;
+
+  max-height: 25px;
 }
 
 .skin-image {
-  width: 10px; /* Change the value to the desired width */
-  height: 10px; /* Change the value to the desired height */
+  width: 80px; /* Change the value to the desired width */
+  height: 80px; /* Change the value to the desired height */
+  align-items: center;
+}
+
+ul {
+  list-style-type: none; /* remove bullet point */
 }
