@@ -8,26 +8,29 @@
     <link rel="stylesheet" href="CSGO-skin-databas.css" />
   </head>
   <body>
-    <main>
+    <header>
       <h1 class="" id="title">Skin search</h1>
-      <div class="container">
-        <div class="search-bar">
-          <div>
-            <input
-              type="text"
-              id="search-input"
-              onkeyup="search_skin()"
-              placeholder="Search..."
-            />
-            <br />
-            <div id="dropdown">
-              <ul id="list-holder"></ul>
+    </header>
+    <main>
+      <article>
+        <section class="container">
+          <section class="search-bar">
+            <div>
+              <input
+                type="text"
+                id="search-input"
+                onkeyup="search_skin()"
+                placeholder="Search..."
+              />
+              <div id="dropdown">
+                <ul id="list-holder"></ul>
+              </div>
             </div>
-          </div>
-          <button class="search-button">Search</button>
-        </div>
-      </div>
+          </section>
+        </section>
+      </article>
     </main>
+
     <script src="skins.js"></script>
     <script src="CSGO-skin-databas.js"></script>
   </body>
