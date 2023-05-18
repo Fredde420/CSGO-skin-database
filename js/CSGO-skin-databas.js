@@ -8,7 +8,7 @@ function search_skin() {
     obj.collection.toLowerCase().includes(input) || 
     obj.weapon.toLowerCase().includes(input) || 
     obj.name.toLowerCase().includes(input) || 
-    obj.grade.toLowerCase().includes(input) 
+    obj.grade.toLowerCase().includes(input)  
   );
 
   // Create dropdown items for filtered skins
@@ -20,6 +20,7 @@ function search_skin() {
     // Add skin image
     const skinImage = document.createElement("img");
     skinImage.src = obj.picture;
+    skinImage.alt = `Bild på ${obj.weapon} ${obj.name}`;
     skinImage.classList.add("skin-image");
     skinContainer.appendChild(skinImage);
 

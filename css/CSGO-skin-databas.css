@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quantico&display=swap");
 
+/* CSGO-skin-databas */
+
 body {
   display: flex;
   flex-direction: column;
@@ -254,5 +256,92 @@ td {
   100% {
     text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700,
       0 0 40px #ff8c00, 0 0 50px #ff8c00, 0 0 60px #ff8c00, 0 0 70px #ff8c00;
+  }
+}
+
+/* Formulär */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.form-input {
+  margin-bottom: 1.5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input label {
+  font-size: 16px;
+}
+
+.form-input input,
+.form-input textarea {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.form-input textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.form-input .input-group {
+  display: flex;
+  align-items: center;
+}
+
+.form-input .input-group input,
+.form-input .input-group textarea {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.form-submit {
+  margin-top: 1.5vh;
+}
+
+.form-submit input {
+  padding: 10px 20px;
+  background-color: #254073;
+  color: #ccba7c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Information */
+
+/* Information Box */
+aside {
+  background-color: #254073;
+  color: #ccba7c;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+  max-width: 60vh; /* Adjust the width as desired */
+  width: 100%;
+  box-sizing: border-box;
+  border: 3px solid #ccba7c;
+}
+
+aside h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+aside p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+  aside {
+    max-width: none;
   }
 }
