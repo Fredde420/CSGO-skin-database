@@ -55,3 +55,4 @@ document.addEventListener('click', function(event) {
     document.getElementById('list-holder').innerHTML = "";
   }
 });
+

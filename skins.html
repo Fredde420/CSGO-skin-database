@@ -7,12 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/CSGO-skin-databas.css" />
   </head>
+
   <body>
     <header>
-      <h1 class="" id="title">Skin search</h1>
+      <h1 class="" id="title">Most expensive skins</h1>
       <section class="button-holder">
-        <button class="custom-button" onclick="location.href='skins.html';">
-          Most expensive skins
+        <button
+          class="custom-button"
+          onclick="location.href='CSGO-skin-databas.html';"
+        >
+          Skin search
         </button>
         <button class="custom-button" onclick="location.href='form.html';">
           Formulär
@@ -25,24 +29,30 @@
         </button>
       </section>
     </header>
+
     <main>
-      <article>
-        <section class="container">
-          <section class="search-bar">
-            <section>
-              <input
-                type="text"
-                id="search-input"
-                onkeyup="search_skin()"
-                placeholder="Search..."
-              />
-              <section id="dropdown">
-                <ul id="list-holder"></ul>
-              </section>
-            </section>
-          </section>
-        </section>
-      </article>
+      <table background="images/skinwall.png">
+        <tr>
+          <td><h3>Skins</h3></td>
+          <td><h3>Price</h3></td>
+        </tr>
+        <tr>
+          <td class="knife">Karambit Case Hardened (Blue Gem)</td>
+          <td>$2 million+</td>
+        </tr>
+        <tr>
+          <td class="covert">Souvenir AWP Dragon Lore</td>
+          <td>$150,000+</td>
+        </tr>
+        <tr>
+          <td class="classified">AK-47 Case Hardened (661)</td>
+          <td>$30,000-$120,000</td>
+        </tr>
+        <tr>
+          <td class="contraband">M4A4 Howl</td>
+          <td>$2,000 – $40,000+</td>
+        </tr>
+      </table>
     </main>
 
     <footer>

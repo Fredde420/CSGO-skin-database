@@ -17,10 +17,19 @@ main {
 
 footer {
   background-color: #254073;
-  color: #ccba7c;
   padding: 20px;
+  width: auto;
+}
+
+.footer-content {
   text-align: center;
-  font-size: 14px;
+  color: #ccba7c;
+  font-size: 2vh;
+}
+
+element.style {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .container {
@@ -37,11 +46,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 105vh;
+  width: 50vh;
 }
 
 #search-input {
-  width: 103vh;
+  width: 100%;
   height: 40px;
   border: none;
   padding: 5px;
@@ -53,7 +62,7 @@ footer {
   background-color: #de9b35;
   color: #0c0f12;
   border: none;
-  padding: 10px;
+  padding: 1px;
   margin-left: 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -65,7 +74,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  height: 2vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -79,7 +88,8 @@ h1 {
 
 #list-holder {
   position: absolute;
-  top: 1vh;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,10 +133,9 @@ button.more-info-button {
   text-align: center; /* Center text */
   text-decoration: none; /* Remove underline */
   display: inline-block; /* Make sure button is inline */
-  font-size: 12px; /* Set font size */
+  font-size: 9px; /* Set font size */
   margin-left: 10px; /* Add some margin to the left */
   border-radius: 5px;
-
   max-height: 25px;
 }
 
@@ -138,4 +147,112 @@ button.more-info-button {
 
 ul {
   list-style-type: none; /* remove bullet point */
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-holder {
+  display: flex;
+  margin-bottom: 5vh;
+}
+
+button.custom-button {
+  background-color: #254073;
+  border: none;
+  padding: 5px 8px;
+  margin-right: 10px;
+  color: #ccba7c;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.custom-button:hover {
+  background-color: #de9b35;
+}
+
+/* Media query for viewport width 916px or less */
+@media (max-width: 916px) {
+  .container {
+    justify-content: flex-start;
+  }
+
+  .search-bar {
+    width: 50vh;
+  }
+
+  #search-input {
+    font-size: 14px;
+  }
+
+  #list-holder {
+    top: 1vh;
+    margin-right: 16vh;
+  }
+
+  .skin-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .footer-content {
+    font-size: 1.8vh;
+  }
+}
+
+/* Skin tabell */
+
+table {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  border: 4px solid #254073;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border: 3px solid #000;
+}
+
+.knife {
+  color: gold;
+}
+
+.covert {
+  color: #eb4b4b;
+}
+
+.classified {
+  color: #d32ee6;
+}
+
+.contraband {
+  color: #ffae39;
+  text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700,
+    0 0 40px #ff8c00, 0 0 50px #ff8c00, 0 0 60px #ff8c00, 0 0 70px #ff8c00;
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700,
+      0 0 40px #ff8c00, 0 0 50px #ff8c00, 0 0 60px #ff8c00, 0 0 70px #ff8c00;
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700,
+      0 0 40px #ff8c00, 0 0 50px #ff8c00, 0 0 60px #ff8c00, 0 0 70px #ff8c00;
+  }
 }
