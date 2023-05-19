@@ -315,8 +315,6 @@ td {
   cursor: pointer;
 }
 
-/* Information */
-
 /* Information Box */
 aside {
   background-color: #254073;
@@ -324,7 +322,7 @@ aside {
   padding: 20px;
   margin: 20px auto;
   border-radius: 5px;
-  max-width: 60vh; /* Adjust the width as desired */
+  max-width: 60vh;
   width: 100%;
   box-sizing: border-box;
   border: 3px solid #ccba7c;

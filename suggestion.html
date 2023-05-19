@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Förslag</title>
+    <title>Suggestions</title>
     <link rel="stylesheet" href="css/CSGO-skin-databas.css" />
   </head>
   <body>
     <header>
-      <h1 class="" id="title">Förslag</h1>
-      <section class="button-holder">
+      <h1 class="" id="title">Suggestions</h1>
+      <nav class="button-holder">
         <button class="custom-button" onclick="location.href='skins.html';">
           Most expensive skins
         </button>
@@ -26,23 +26,23 @@
         >
           Information
         </button>
-      </section>
+      </nav>
     </header>
     <main>
       <section class="form-container">
         <form>
           <section class="form-input">
-            <label for="name">Namn:</label>
+            <label for="name">Name:</label>
             <input
               type="text"
               id="name"
               name="name"
               required
-              placeholder="förnamn efternamn"
+              placeholder="first name last name"
             />
           </section>
           <section class="form-input">
-            <label for="email">Din Email:</label>
+            <label for="email">Your email:</label>
             <input
               type="email"
               id="email"
@@ -52,12 +52,22 @@
             />
           </section>
           <section class="form-input">
-            <label for="message">Förslag:</label>
-            <textarea
+            <label for="email">Your message:</label>
+            <input
+              type="message"
               id="message"
               name="message"
               required
-              placeholder="Skriv dina förslag"
+              placeholder="write your message"
+            />
+          </section>
+          <section class="form-input">
+            <label for="message">Suggestion:</label>
+            <textarea
+              id="suggestion"
+              name="suggestion"
+              required
+              placeholder="Write your suggestion"
             ></textarea>
           </section>
           <section class="form-submit">
